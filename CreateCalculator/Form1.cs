@@ -96,5 +96,48 @@ namespace CreateCalculator
             currentInput += button.Text;
             btn1.Text = currentInput;
         }
+
+        private void Evaluate()
+        {
+            if(operationPending)
+            {
+                double secoundNumber = double.Parse(currentInput);
+
+                switch (operation)
+                {
+                    case "+":
+                        result += secoundNumber;
+                        break;
+                    case "-":
+                        result -= secoundNumber;
+                        break;
+                    case "*":
+                        result *= secoundNumber;
+                        break;
+                    case "/":
+                        if(secoundNumber != 0)
+                        {
+                            result /= secoundNumber;
+                        }
+                        else
+                        {
+                            txtResult.Text = "Error";
+                            return;
+                        }
+                        break;
+                }
+                txtResult.Text = result.ToString();
+                currentInput = "";
+                operationPending = false;
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if(operationPending)
+            {
+
+            }
+        }
     }
 }
