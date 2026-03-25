@@ -58,6 +58,7 @@
             this.btnMil.TabIndex = 17;
             this.btnMil.Text = "x";
             this.btnMil.UseVisualStyleBackColor = false;
+            this.btnMil.Click += new System.EventHandler(this.btnMil_Click);
             // 
             // bntEqual
             // 
@@ -68,6 +69,7 @@
             this.bntEqual.TabIndex = 16;
             this.bntEqual.Text = "=";
             this.bntEqual.UseVisualStyleBackColor = false;
+            this.bntEqual.Click += new System.EventHandler(this.bntEqual_Click);
             // 
             // btn0
             // 
@@ -90,6 +92,7 @@
             this.btnClear.TabIndex = 13;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnAdd
             // 
@@ -147,6 +150,7 @@
             this.btnSub.TabIndex = 8;
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = false;
+            this.btnSub.Click += new System.EventHandler(this.btnSub_Click);
             // 
             // btn6
             // 
@@ -193,6 +197,7 @@
             this.btnDevide.TabIndex = 4;
             this.btnDevide.Text = "/";
             this.btnDevide.UseVisualStyleBackColor = false;
+            this.btnDevide.Click += new System.EventHandler(this.btnDevide_Click);
             // 
             // btn9
             // 
